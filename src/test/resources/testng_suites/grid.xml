@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grid" parallel="classes">
+    <listeners>
+        <listener class-name="com.solvd.seleniumgrid.ScreenshotListener"/>
+    </listeners>
+    <test name="Grid Test" thread-count="2">
+        <classes>
+            <class name="com.solvd.seleniumgrid.grid.LoginTest"/>
+            <class name="com.solvd.seleniumgrid.grid.ShoppingCartTest"/>
+        </classes>
+    </test>
+</suite>
